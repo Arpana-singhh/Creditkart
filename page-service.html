@@ -237,10 +237,11 @@
 	<section class="page-title" style="background-image: url(images/background/page-title-bg.jpg);">
 		<div class="auto-container">
 			<div class="title-outer">
-				<h1 class="title">Service Details</h1>
+				<h1 class="title" id="pageTitle">Service Details</h1>
 				<ul class="page-breadcrumb">
 					<li><a href="index.html">Home</a></li>
-					<li>Service Details</li>
+					<li id="crumbServiceWrap"><a href="page-service.html" id="crumbService">Services</a></li>
+					<li id="crumbCategoryWrap" style="display:none"><span id="crumbCategory"></span></li>
 				</ul>
 			</div>
 		</div>
@@ -253,13 +254,13 @@
       <div class="row align-items-lg-center">
         <div class="col-lg-6">
           <div class="sec-title mb-40">
-            <h6 class="sub-title wow fadeInUp bg-transparent ps-0" data-wow-delay="00ms" data-wow-duration="1500ms">Service Details</h6>
-            <h2 class="title mb-30 wow splt-txt" data-splitting>Product Devlopment <br class="d-none d-lg-block"> For Butter Business</h2>
+            <h6 class="sub-title wow fadeInUp bg-transparent ps-0" data-wow-delay="00ms" data-wow-duration="1500ms" id="subTitleLabel">Service Details</h6>
+            <h2 class="title mb-30" id="serviceHeading">Product Devlopment <br class="d-none d-lg-block"> For Butter Business</h2>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="project-details__top mt-lg-5">
-            <div class="text mb-40">Rorem ipsum dolor sit ametconsectetur adipiscing elit,tempor Rorem ipsum dolor sit ametconsectetur adipiscing elit, sed do eiusmod temporRorem ipsum dolor</div>
+            <div class="text mb-40" id="serviceDescription">Rorem ipsum dolor sit ametconsectetur adipiscing elit,tempor Rorem ipsum dolor sit ametconsectetur adipiscing elit, sed do eiusmod temporRorem ipsum dolor</div>
           </div>
         </div>
       </div>
@@ -281,36 +282,15 @@
   			<!--Start Services Details Content-->
   			<div class="col-xl-8 col-lg-8">
   				<div class="services-details__content">
-  					<h3>Description</h3>
-  					<p class="mb-30">UX design refers to the term “user experience design”, while UI stands for “user interface design”. Both elements are crucial to a product and work closely together. But despite their professional relationship, the roles themselves are quite different, referring to very different aspects of the product development process and the design discipline.</p>
-  					<p class="mb-30">In relation to websites and apps, UI design considers the look, feel, and interactivity of the product. It’s all about making sure that the user interface of a product is as intuitive as possible, and that means carefully considering each and every visual, interactive element the user might encounter.</p>
+  					<h3 id="descriptionLabel">Description</h3>
+  					<p class="mb-30" id="serviceLongText">UX design refers to the term “user experience design”, while UI stands for “user interface design”. Both elements are crucial to a product and work closely together. But despite their professional relationship, the roles themselves are quite different, referring to very different aspects of the product development process and the design discipline.</p>
+            <div class="btn-wrp mb-30" id="backToServiceWrap" style="display:none">
+              <a href="#" id="backToServiceBtn" class="btn-two">Back to Service <i class="fa-regular fa-arrow-up-right"></i></a>
+            </div>
             <div class="service-nr-list">
-              <h3 class="mb-5">Service Process</h3>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="nr-list mb-5">
-                    <h4 class="title d-flex align-items-center mb-4"><span>01</span> Creative Analysis</h4>
-                    <p>Creative analysis is important. It is common for marketers to measure campaign performance at a superficial level. But to fully understand it</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="nr-list mb-5">
-                    <h4 class="title d-flex align-items-center mb-4"><span>02</span> Design & Scatches</h4>
-                    <p>A design sketch is a graphical sketched representation of a design plan. A design sketch, see example figure, is a visualization</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="nr-list mb-5">
-                    <h4 class="title d-flex align-items-center mb-4"><span>03</span> Prototype & Wireframing</h4>
-                    <p>A prototype is a barebones, relatively simple working model of an app or webpage. They are typically the next step in the product design.</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="nr-list mb-5">
-                    <h4 class="title d-flex align-items-center mb-4"><span>04</span> Delivery & Deploy</h4>
-                    <p>Continuous delivery is an extension of continuous integration since it automatically deploys all to a testing and/or production</p>
-                  </div>
-                </div>
+              <h3 class="mb-5" id="categoryListLabel">Explore Categories</h3>
+              <div class="row" id="categoryList">
+                <!-- Category cards injected by JS from js/services-data.js -->
               </div>
             </div>
   					<div class="content mt-40">
@@ -393,14 +373,14 @@
             <div class="sidebar-widget service-sidebar-single">
               <div class="sidebar-service-list mb-30">
                 <h4 class="title">More Services</h4>
-                <ul>
-                  <li><a href="page-service-details.html" class="current"><i class="far fa-arrow-right"></i><span>Web Development</span></a></li>
-                  <li class="current"><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>UI/UX Design</span></a></li>
-                  <li><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>Digital Marketing</span></a></li>
-                  <li><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>Product Design</span></a></li>
-                  <li><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>Branding & Illustration</span></a></li>
-                  <li><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>Mobile Solutions</span></a></li>
-                  <li><a href="page-service-details.html"><i class="far fa-arrow-right"></i><span>App Development</span></a></li>
+                <ul id="moreServicesList">
+                  <li><a href="page-service.html?do=getServiceData&productId=1"><i class="far fa-arrow-right"></i><span>Web Development</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=2"><i class="far fa-arrow-right"></i><span>UI/UX Design</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=3"><i class="far fa-arrow-right"></i><span>Digital Marketing</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=4"><i class="far fa-arrow-right"></i><span>Product Design</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=5"><i class="far fa-arrow-right"></i><span>Branding & Illustration</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=6"><i class="far fa-arrow-right"></i><span>Mobile Solutions</span></a></li>
+                  <li><a href="page-service.html?do=getServiceData&productId=7"><i class="far fa-arrow-right"></i><span>App Development</span></a></li>
                 </ul>
               </div>
               <div class="sidebar-service-list mb-30">
@@ -595,6 +575,92 @@
 <script src="js/splitType.js"></script>
 <script src="js/script-gsap.js"></script>
 <script src="js/script.js"></script>
+
+<!-- Data + logic that makes this single page render service / category views -->
+<script src="js/services-data.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var doAction = params.get('do');
+  var productId = parseInt(params.get('productId'), 10) || 1;
+  var productCategoryId = params.get('productCategoryId') ? parseInt(params.get('productCategoryId'), 10) : null;
+
+  var product = getProductById(productId) || products[0];
+
+  var moreServicesLinks = document.querySelectorAll('#moreServicesList a');
+  moreServicesLinks.forEach(function (link) {
+    var linkParams = new URLSearchParams(link.search);
+    var linkProductId = parseInt(linkParams.get('productId'), 10);
+    link.parentElement.classList.toggle('current', linkProductId === product.id);
+  });
+
+  function renderCategoryCards(list, activeCategoryId, onCardClick) {
+    var container = document.getElementById('categoryList');
+    container.innerHTML = '';
+    list.forEach(function (cat) {
+      var col = document.createElement('div');
+      col.className = 'col-lg-6';
+      var isActive = cat.id === activeCategoryId;
+      col.innerHTML =
+        '<div class="nr-list mb-5' + (isActive ? ' active-block' : '') + '">' +
+          '<h4 class="title d-flex align-items-center mb-4">' +
+            (isActive
+              ? '<span>' + cat.title + ' (current)</span>'
+              : '<a href="' + onCardClick(cat) + '">' + cat.title + '</a>') +
+          '</h4>' +
+          '<p>' + cat.text + '</p>' +
+        '</div>';
+      container.appendChild(col);
+    });
+  }
+
+  if (doAction === 'getCatData' && productCategoryId) {
+    // Deepest view: one specific category within a service
+    var category = product.categories.find(function (c) { return c.id === productCategoryId; }) || product.categories[0];
+
+    document.title = 'Creditkart | ' + category.title;
+    document.getElementById('pageTitle').textContent = category.title;
+    document.getElementById('subTitleLabel').textContent = product.title;
+    document.getElementById('serviceHeading').textContent = category.title;
+    document.getElementById('serviceDescription').textContent = category.text;
+    document.getElementById('descriptionLabel').textContent = 'Category Description';
+    document.getElementById('serviceLongText').textContent = category.text;
+    document.getElementById('categoryListLabel').textContent = 'More Categories in this Service';
+
+    document.getElementById('crumbService').textContent = product.title;
+    document.getElementById('crumbService').href = 'page-service.html?do=getServiceData&productId=' + product.id;
+    document.getElementById('crumbCategory').textContent = category.title;
+    document.getElementById('crumbCategoryWrap').style.display = '';
+
+    document.getElementById('backToServiceWrap').style.display = '';
+    document.getElementById('backToServiceBtn').href = 'page-service.html?do=getServiceData&productId=' + product.id;
+
+    renderCategoryCards(product.categories, category.id, function (cat) {
+      return 'page-service.html?do=getCatData&productId=' + product.id + '&productCategoryId=' + cat.id;
+    });
+  } else {
+    // Service overview: default view, and view when do=getServiceData
+    document.title = 'Creditkart | ' + product.title + ' Details';
+    document.getElementById('pageTitle').textContent = product.title + ' Details';
+    document.getElementById('subTitleLabel').textContent = 'Service Details';
+    document.getElementById('serviceHeading').innerHTML = product.heading;
+    document.getElementById('serviceDescription').textContent = product.description;
+    document.getElementById('descriptionLabel').textContent = 'Description';
+    document.getElementById('serviceLongText').textContent = product.description;
+    document.getElementById('categoryListLabel').textContent = 'Explore Categories';
+
+    document.getElementById('crumbService').textContent = product.title;
+    document.getElementById('crumbService').removeAttribute('href');
+    document.getElementById('crumbCategoryWrap').style.display = 'none';
+
+    document.getElementById('backToServiceWrap').style.display = 'none';
+
+    renderCategoryCards(product.categories, null, function (cat) {
+      return 'page-service.html?do=getCatData&productId=' + product.id + '&productCategoryId=' + cat.id;
+    });
+  }
+})();
+</script>
 </body>
 
 <!-- Mirrored from html.kodesolution.com/2025/consultez-html-v2/page-service-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 08:44:31 GMT -->
