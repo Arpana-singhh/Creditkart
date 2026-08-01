@@ -21448,9 +21448,7 @@ Page Title
   min-height: 125px;
 }
 
-.sidebar-service-list .btn-two{
-    border-radius: 16px;
-}
+.sidebar-service-list .btn-two{border-radius: 10px;width: 100%;height: 48px;}
 
 /* Loan inquiry form */
 .loan-inquiry-form {
@@ -21458,11 +21456,10 @@ Page Title
   gap: 22px;
 }
 .loan-choice-group {
-  display: grid;
-  grid-template-columns: minmax(104px, 1fr) auto auto;
+  display: flex;
   align-items: center;
   column-gap: 10px;
-  margin: 0;
+  margin: 0;gap: 10px;flex-wrap: wrap;
   padding: 0;
   border: 0;
 }
@@ -21471,16 +21468,14 @@ Page Title
   row-gap: 12px;
 }
 .loan-choice-group legend {
-  grid-row: 1 / span 2;
   width: auto;
-  float: left;
   margin: 0;
   padding: 0;
   color: var(--theme-color2);
   font-family: var(--title-font);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.35;display: block;width: 100%;
 }
 .custom-radio {
   display: inline-flex;
@@ -21534,7 +21529,7 @@ Page Title
 }
 .loan-form-field {
   display: grid;
-  gap: 8px;
+  gap: 5px;
 }
 .loan-form-field label,
 .inquiry-consent {
@@ -21542,23 +21537,20 @@ Page Title
   font-family: var(--text-font);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.45;
+  line-height: 1.45;font-size: 13px;
 }
+.loan-form-field label{
+  font-size: 16px;
+}
+
 .loan-form-field label em {
   color: #dc3545;
   font-style: normal;
 }
 .sidebar-service-list .loan-form-field .form-control {
-  height: 52px;
-  padding: 10px 14px;
-  border: 1px solid rgba(var(--theme-color1-rgb), .75);
-  border-radius: 8px;
-  background-color: var(--theme-color-white);
+ height: 48px; padding: 10px 14px; border-radius: 10px; background-color: var(--theme-color-white);
 }
-.sidebar-service-list .loan-form-field .form-control:focus {
-  border-color: var(--theme-color2);
-  box-shadow: 0 0 0 .2rem rgba(var(--theme-color2-rgb), .12);
-}
+
 .inquiry-consent {
   display: flex;
   align-items: flex-start;
@@ -21573,13 +21565,8 @@ Page Title
   margin: 3px 0 0;
   accent-color: var(--theme-color2);
 }
-.inquiry-submit {
-  margin-top: 10px;
-  border: 0;
-  border-radius: 0 !important;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+
+
 @media (max-width: 575.98px) {
   .loan-choice-group,
   .loan-choice-group--loan-type {
@@ -21602,7 +21589,8 @@ Page Title
   line-height: 44px;
 }
 .srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
-
+.benefit-list strong{font-weight: 600;}
+.benefit-list .text{font-size: 15px;line-height: 1.6;}
 .service-details-help {
   position: relative;
   display: block;
