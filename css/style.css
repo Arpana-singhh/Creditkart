@@ -21595,6 +21595,42 @@ Page Title
   font-weight: 500;
   line-height: 44px;
 }
+
+.loan-content-section {
+  margin-bottom: 42px;
+}
+.loan-content-section h3 {
+  margin-bottom: 16px;
+}
+.loan-content-section p,
+.loan-content-section li {
+  color: var(--text-color);
+}
+.loan-content-section ol,
+.loan-content-section ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 22px;
+}
+.loan-details-table {
+  margin: 22px 0 0;
+  border: 1px solid rgba(var(--theme-color2-rgb), .16);
+}
+.loan-details-table th,
+.loan-details-table td {
+  padding: 13px 16px;
+  border-color: rgba(var(--theme-color2-rgb), .16);
+  vertical-align: middle;
+}
+.loan-details-table thead th,
+.loan-details-table tbody th {
+  color: var(--theme-color2);
+  font-family: var(--title-font);
+  font-weight: 700;
+}
+.loan-details-table thead th {
+  background: var(--theme-color-light-green);
+}
 .srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
 .benefit-list strong{font-weight: 600;}
 .benefit-list .text{font-size: 15px;line-height: 1.6;}
