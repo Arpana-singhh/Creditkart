@@ -395,26 +395,69 @@
                 </div>
                 <div class="sidebar-service-list inquiry-form">
                   <h4 class="title">For an Inquiry</h4>
-                  <form action="#0" class="srv-collapse-box">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="mb-20">
-                          <input class="form-control" type="text" placeholder="Your Name">
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="mb-20">
-                          <input class="form-control" type="email" placeholder="Email Address">
-                        </div>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="mb-20">
-                          <textarea class="form-control" name="masage" id="masage" rows="5"
-                            placeholder="Write a Message"></textarea>
-                          <button class="btn-two mt-30">Send Message Us</button>
-                        </div>
-                      </div>
+                  <form action="#0" class="srv-collapse-box loan-inquiry-form">
+                    <fieldset class="loan-choice-group">
+                      <legend>Occupation</legend>
+                      <label class="custom-radio">
+                        <input type="radio" name="occupation" value="salaried" checked>
+                        <span class="custom-radio__mark" aria-hidden="true"></span>
+                        <span>Salaried</span>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="occupation" value="self-employed">
+                        <span class="custom-radio__mark" aria-hidden="true"></span>
+                        <span>Self Employed</span>
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="loan-choice-group loan-choice-group--loan-type">
+                      <legend>Nature of Loan</legend>
+                      <label class="custom-radio">
+                        <input type="radio" name="loan-type" value="new-loan" checked>
+                        <span class="custom-radio__mark" aria-hidden="true"></span>
+                        <span>New Loan</span>
+                      </label>
+                      <label class="custom-radio">
+                        <input type="radio" name="loan-type" value="balance-transfer">
+                        <span class="custom-radio__mark" aria-hidden="true"></span>
+                        <span>Balance Transfer</span>
+                      </label>
+                    </fieldset>
+
+                    <div class="loan-form-field">
+                      <label for="inquiryName">Enter Your Full Name <em>*</em></label>
+                      <input class="form-control" id="inquiryName" name="name" type="text" autocomplete="name" required>
                     </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryEmail">Email Address <em>*</em></label>
+                      <input class="form-control" id="inquiryEmail" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryPhone">Mobile Number <em>*</em></label>
+                      <input class="form-control" id="inquiryPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required>
+                    </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryArea">Area Name</label>
+                      <input class="form-control" id="inquiryArea" name="area" type="text" autocomplete="address-level2">
+                    </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryPincode">Pincode</label>
+                      <input class="form-control" id="inquiryPincode" name="pincode" type="text" inputmode="numeric" autocomplete="postal-code">
+                    </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryAmount">Loan Amount Needed</label>
+                      <input class="form-control" id="inquiryAmount" name="loan_amount" type="number" inputmode="numeric" min="0">
+                    </div>
+                    <div class="loan-form-field">
+                      <label for="inquiryIncome">Net Monthly Income</label>
+                      <input class="form-control" id="inquiryIncome" name="monthly_income" type="number" inputmode="numeric" min="0">
+                    </div>
+
+                    <label class="inquiry-consent" for="inquiryConsent">
+                      <input id="inquiryConsent" name="consent" type="checkbox" required>
+                      <span>I authorize Livanity Financial Services or its partnering bank's to contact, call or mail me. This overrides my number being in the NDNC registry.</span>
+                    </label>
+                    <button class="btn-two inquiry-submit" type="submit">Search Plan</button>
                   </form>
                 </div>
               </div>

@@ -21452,6 +21452,149 @@ Page Title
     border-radius: 16px;
 }
 
+/* Loan inquiry form */
+.loan-inquiry-form {
+  display: grid;
+  gap: 22px;
+}
+.loan-choice-group {
+  display: grid;
+  grid-template-columns: minmax(104px, 1fr) auto auto;
+  align-items: center;
+  column-gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.loan-choice-group--loan-type {
+  grid-template-columns: minmax(104px, 1fr) auto;
+  row-gap: 12px;
+}
+.loan-choice-group legend {
+  grid-row: 1 / span 2;
+  width: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color2);
+  font-family: var(--title-font);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: var(--theme-color2);
+  cursor: pointer;
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.custom-radio input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.custom-radio__mark {
+  display: inline-grid;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  place-items: center;
+  border: 1.5px solid rgba(var(--theme-color2-rgb), .55);
+  border-radius: 50%;
+  background: var(--theme-color-white);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.custom-radio__mark::after {
+  width: 8px;
+  height: 8px;
+  content: "";
+  border-radius: 50%;
+  background: var(--theme-color1);
+  transform: scale(0);
+  transition: transform .2s ease;
+}
+.custom-radio input:checked + .custom-radio__mark {
+  border-color: var(--theme-color2);
+}
+.custom-radio input:checked + .custom-radio__mark::after {
+  transform: scale(1);
+}
+.custom-radio input:focus-visible + .custom-radio__mark {
+  outline: 3px solid rgba(var(--theme-color1-rgb), .4);
+  outline-offset: 2px;
+}
+.loan-form-field {
+  display: grid;
+  gap: 8px;
+}
+.loan-form-field label,
+.inquiry-consent {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.loan-form-field label em {
+  color: #dc3545;
+  font-style: normal;
+}
+.sidebar-service-list .loan-form-field .form-control {
+  height: 52px;
+  padding: 10px 14px;
+  border: 1px solid rgba(var(--theme-color1-rgb), .75);
+  border-radius: 8px;
+  background-color: var(--theme-color-white);
+}
+.sidebar-service-list .loan-form-field .form-control:focus {
+  border-color: var(--theme-color2);
+  box-shadow: 0 0 0 .2rem rgba(var(--theme-color2-rgb), .12);
+}
+.inquiry-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.inquiry-consent input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin: 3px 0 0;
+  accent-color: var(--theme-color2);
+}
+.inquiry-submit {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 0 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 575.98px) {
+  .loan-choice-group,
+  .loan-choice-group--loan-type {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+  }
+  .loan-choice-group legend {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+  .loan-choice-group--loan-type .custom-radio:last-child {
+    grid-column: 2;
+  }
+}
+
 .sidebar-service-list .address li {
   color: #0A1222;
   font-family: var(--text-font);
