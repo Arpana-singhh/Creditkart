@@ -1667,6 +1667,15 @@ section {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.table-rounded {
+  border-radius: 20px;
+  overflow: hidden;border: 1px solid rgba(var(--theme-color2-rgb), .16);
+}
+.table-rounded .table{margin-top: 0;border:0}
+
+.table-rounded tr:last-of-type th,
+.table-rounded tr:last-of-type td{border-bottom:0;box-shadow: none;}
+
 @-webkit-keyframes sway {
   0% {
     -webkit-transform: translateX(-20px);
@@ -21605,12 +21614,14 @@ Page Title
 .loan-content-section p,
 .loan-content-section li {
   color: var(--text-color);
+  list-style: inherit;
 }
 .loan-content-section ol,
 .loan-content-section ul {
   display: grid;
   gap: 12px;
   padding-left: 22px;
+  list-style:disc;
 }
 .loan-details-table {
   margin: 22px 0 0;

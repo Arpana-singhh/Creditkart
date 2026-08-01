@@ -14,18 +14,38 @@ const products = [
     categories: [
       {
         id: 1,
-        title: "Frontend Development",
-        text: "Responsive, accessible interfaces built with modern HTML, CSS and JavaScript frameworks.",
+        title: "Home Loan for Salaried",
+        text: "Home loan options designed for salaried applicants.",
       },
       {
         id: 2,
-        title: "Backend Development",
-        text: "Robust APIs and server-side logic that power your application securely and reliably.",
+        title: "Home Loan for Self Employed",
+        text: "Home loan options for self-employed professionals and business owners.",
       },
       {
         id: 3,
-        title: "E-commerce Solutions",
-        text: "Custom online stores with secure payments, inventory, and checkout flows built to convert.",
+        title: "Home Loan Balance Transfer",
+        text: "Transfer an existing home loan to a lender with a more suitable offer.",
+      },
+      {
+        id: 4,
+        title: "Self Construction Home Loan",
+        text: "Finance for constructing your own home.",
+      },
+      {
+        id: 5,
+        title: "Home Loan for Plot Purchase",
+        text: "Finance for purchasing a residential plot.",
+      },
+      {
+        id: 6,
+        title: "Rural (akarani) Home Loan",
+        text: "Home loan options for rural and akarani properties.",
+      },
+      {
+        id: 7,
+        title: "Home Loan for NRI",
+        text: "Home financing options for non-resident Indians.",
       },
     ],
   },
