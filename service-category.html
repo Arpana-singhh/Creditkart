@@ -206,7 +206,7 @@
               <h6 class="sub-title wow fadeInUp bg-transparent ps-0" data-wow-delay="00ms" data-wow-duration="1500ms"
                 id="subTitleLabel">Service Details</h6>
               <h2 class="title mb-30" id="serviceHeading">Home Loans starting <br> @8.15% p.a.</h2>
-              <p>A home loan is a financial arrangement by bank or a lender to an individual to purchase a residential
+              <p id="serviceIntro">A home loan is a financial arrangement by bank or a lender to an individual to purchase a residential
                 property.</p>
             </div>
             <div class="services-details__content position-relative my-5">
@@ -386,19 +386,16 @@
                   <h4 class="title">
                     <button class="sidebar-collapse-toggle" type="button" data-bs-toggle="collapse"
                       data-bs-target="#sidebarServicesPanel" aria-expanded="true" aria-controls="sidebarServicesPanel">
-                      <span id="sidebarServicesTitle">Home Loan Services</span>
+                      <span id="sidebarServicesTitle">Home Loan for Salaried</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h4>
                   <div class="srv-collapse-box collapse" id="sidebarServicesPanel"
                     data-bs-parent="#serviceSidebarAccordion">
                     <ul id="moreServicesList">
-                      <li><a href="service-category.html?productId=1&amp;productCategoryId=1"><i
-                            class="far fa-arrow-right"></i><span>Home Loan for Salaried</span></a></li>
-                      <li><a href="service-category.html?productId=1&amp;productCategoryId=2"><i
-                            class="far fa-arrow-right"></i><span>Home Loan for Self Employed</span></a></li>
-                      <li><a href="service-category.html?productId=1&amp;productCategoryId=3"><i
-                            class="far fa-arrow-right"></i><span>Home Loan Balance Transfer</span></a></li>
+                      <li><a href="#0"><i class="far fa-arrow-right"></i><span>MAS Finance Housing Loan</span></a></li>
+                      <li><a href="#0"><i class="far fa-arrow-right"></i><span>Bandhan Home Loan</span></a></li>
+                      <li><a href="#0"><i class="far fa-arrow-right"></i><span>Indiabulls Housing Finance Home Loan</span></a></li>
                     </ul>
                   </div>
                 </div>
@@ -653,27 +650,27 @@
       var productCategoryId = params.get("productCategoryId") ? parseInt(params.get("productCategoryId"), 10) : null;
 
       var product = getProductById(productId) || products[0];
+      var category = product.categories.find(function (item) {
+        return item.id === productCategoryId;
+      }) || product.categories[0];
       var $moreServicesList = $("#moreServicesList");
 
-      $("#sidebarServicesTitle").text(product.name + " Services");
+      $("#sidebarServicesTitle").text(category.title);
       $moreServicesList.empty();
-      product.categories.forEach(function (category) {
-        var categoryUrl = "service-category.html?productId=" + product.id + "&productCategoryId=" + category.id;
-        var $link = $("<a>", { href: categoryUrl })
+      (category.subcategories || []).forEach(function (subcategory) {
+        var subcategoryUrl = "#0";
+        var $link = $("<a>", { href: subcategoryUrl })
           .append($("<i>", { class: "far fa-arrow-right", "aria-hidden": "true" }))
-          .append($("<span>").text(category.title));
-        var $item = $("<li>").append($link);
-
-        $moreServicesList.append($item);
+          .append($("<span>").text(subcategory.title));
+        $moreServicesList.append($("<li>").append($link));
       });
 
-      if (doAction === "getCatData" && productCategoryId) {
-        var category = product.categories.find(function (c) {
-          return c.id === productCategoryId;
-        }) || product.categories[0];
-
+      if (productCategoryId) {
         document.title = "Creditkart | " + category.title;
         $("#pageTitle").text(category.title);
+        $("#subTitleLabel").text(product.name + " Services");
+        $("#serviceHeading").text(category.title);
+        $("#serviceIntro").text(category.text);
         $("#crumbService")
           .text(product.name)
           .attr("href", "page-services.html?do=getServiceData&productId=" + product.id);
