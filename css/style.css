@@ -21325,16 +21325,56 @@ Page Title
 }
 
 .sidebar-service-list {
-  background-color: var(--theme-color-gray);
-  padding: 45px 40px 30px;
-  margin: 0;
+    background-color: var(--theme-color-gray);
+    padding: 24px;
+    margin: 0;
+    border-radius: 19px;
 }
+
 .sidebar-service-list .title {
   color: #0A1222;
   font-weight: 700;
   line-height: 34px;
   position: relative;
   margin-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.srv-collapse-box{
+  padding-top: 24px;
+}
+
+.sidebar-service-list .sidebar-collapse-toggle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: inherit;
+  padding: 0 0 12px;
+  text-align: left;
+  width: 100%;
+}
+.sidebar-service-list .sidebar-collapse-toggle i {
+  color: var(--theme-color2);
+  font-size: 18px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+.sidebar-service-list .sidebar-collapse-toggle.collapsed i {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .sidebar-service-list .title:before {
   background-color: #C6D936;
@@ -21399,8 +21439,19 @@ Page Title
   color: var(--theme-color2);
 }
 .sidebar-service-list .form-control {
-  background-color: var(--theme-color-white);
+    background-color: var(--theme-color-white);
+    border-radius: 16px;
+    padding: 16px;
+    height: calc(2.25rem + 21px);
 }
+.sidebar-service-list textarea.form-control{
+  min-height: 125px;
+}
+
+.sidebar-service-list .btn-two{
+    border-radius: 16px;
+}
+
 .sidebar-service-list .address li {
   color: #0A1222;
   font-family: var(--text-font);
