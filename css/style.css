@@ -21458,6 +21458,7 @@ Page Title
   font-weight: 500;
   line-height: 44px;
 }
+.srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
 
 .service-details-help {
   position: relative;
