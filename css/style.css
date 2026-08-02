@@ -21608,21 +21608,40 @@ Page Title
 .loan-content-section {
   margin-bottom: 42px;
 }
-.loan-content-section h3 {
-  margin-bottom: 16px;
-}
+
 .loan-content-section p,
 .loan-content-section li {
   color: var(--text-color);
-  list-style: inherit;
 }
 .loan-content-section ol,
 .loan-content-section ul {
   display: grid;
   gap: 12px;
   padding-left: 22px;
+}
+
+.services-details__content ul{
   list-style:disc;
 }
+.services-details__content li{
+  list-style: inherit;
+}
+.srv-collapse-box ul a span{
+      display: flex;
+    max-width: calc(100% - 64px);
+}
+
+.project-details__top .text > ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+.project-details__top .text > ul li {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+  list-style: disc;
+}
+
 .loan-details-table {
   margin: 22px 0 0;
   border: 1px solid rgba(var(--theme-color2-rgb), .16);
@@ -21642,6 +21661,7 @@ Page Title
 .loan-details-table thead th {
   background: var(--theme-color-light-green);
 }
+
 .srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
 .benefit-list strong{font-weight: 600;}
 .benefit-list .text{font-size: 15px;line-height: 1.6;}

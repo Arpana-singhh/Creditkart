@@ -17,7 +17,6 @@ const products = [
         title: "Home Loan for Salaried",
         text: "Home loan options designed for salaried applicants.",
         subcategories: [
-          { id: 5, title: "Bandhan Home Loan" },
           { id: 14, title: "Indusind Bank Home Loan" },
           { id: 22, title: "Shriram Housing Finance Home Loan" },
           { id: 10, title: "ICICI Home Loan" },
