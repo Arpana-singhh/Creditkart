@@ -1667,6 +1667,15 @@ section {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+.table-rounded {
+  border-radius: 20px;
+  overflow: hidden;border: 1px solid rgba(var(--theme-color2-rgb), .16);
+}
+.table-rounded .table{margin-top: 0;border:0}
+
+.table-rounded tr:last-of-type th,
+.table-rounded tr:last-of-type td{border-bottom:0;box-shadow: none;}
+
 @-webkit-keyframes sway {
   0% {
     -webkit-transform: translateX(-20px);
@@ -21438,8 +21447,145 @@ Page Title
   min-height: 125px;
 }
 
-.sidebar-service-list .btn-two{
-    border-radius: 16px;
+.sidebar-service-list .btn-two{border-radius: 10px;width: 100%;height: 48px;}
+
+/* Loan inquiry form */
+.loan-inquiry-form {
+  display: grid;
+  gap: 22px;
+}
+.loan-choice-group {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin: 0;gap: 10px;flex-wrap: wrap;
+  padding: 0;
+  border: 0;
+}
+.loan-choice-group--loan-type {
+  grid-template-columns: minmax(104px, 1fr) auto;
+  row-gap: 12px;
+}
+.loan-choice-group legend {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  color: var(--theme-color2);
+  font-family: var(--title-font);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;display: block;width: 100%;
+}
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  color: var(--theme-color2);
+  cursor: pointer;
+  font-family: var(--title-font);
+  font-size: 16px;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+.custom-radio input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+.custom-radio__mark {
+  display: inline-grid;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  place-items: center;
+  border: 1.5px solid rgba(var(--theme-color2-rgb), .55);
+  border-radius: 50%;
+  background: var(--theme-color-white);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.custom-radio__mark::after {
+  width: 8px;
+  height: 8px;
+  content: "";
+  border-radius: 50%;
+  background: var(--theme-color1);
+  transform: scale(0);
+  transition: transform .2s ease;
+}
+.custom-radio input:checked + .custom-radio__mark {
+  border-color: var(--theme-color2);
+}
+.custom-radio input:checked + .custom-radio__mark::after {
+  transform: scale(1);
+}
+.custom-radio input:focus-visible + .custom-radio__mark {
+  outline: 3px solid rgba(var(--theme-color1-rgb), .4);
+  outline-offset: 2px;
+}
+.loan-form-field {
+  display: grid;
+  gap: 5px;
+}
+.loan-form-field label,
+.inquiry-consent {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;font-size: 13px;
+}
+
+.title-badge {
+  background: #c6d93661;
+  padding:3px 13px;font-size: 16px;
+  border-radius: 9px;
+}
+
+.loan-form-field label{
+  font-size: 16px;
+}
+
+.loan-form-field label em {
+  color: #dc3545;
+  font-style: normal;
+}
+.sidebar-service-list .loan-form-field .form-control {
+ height: 48px; padding: 10px 14px; border-radius: 10px; background-color: var(--theme-color-white);
+}
+
+.inquiry-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.inquiry-consent input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin: 3px 0 0;
+  accent-color: var(--theme-color2);
+}
+
+
+@media (max-width: 575.98px) {
+  .loan-choice-group,
+  .loan-choice-group--loan-type {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+  }
+  .loan-choice-group legend {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+  .loan-choice-group--loan-type .custom-radio:last-child {
+    grid-column: 2;
+  }
 }
 
 .sidebar-service-list .address li {
@@ -21448,8 +21594,67 @@ Page Title
   font-weight: 500;
   line-height: 44px;
 }
-.srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
 
+.loan-content-section {
+  margin-bottom: 42px;
+}
+
+.loan-content-section p,
+.loan-content-section li {
+  color: var(--text-color);
+}
+.loan-content-section ol,
+.loan-content-section ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 22px;
+}
+
+.services-details__content ul{
+  list-style:disc;
+}
+.services-details__content li{
+  list-style: inherit;
+}
+.srv-collapse-box ul a span{
+      display: flex;
+    max-width: calc(100% - 64px);
+}
+
+.project-details__top .text > ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+.project-details__top .text > ul li {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.6;
+  list-style: disc;
+}
+
+.loan-details-table {
+  margin: 22px 0 0;
+  border: 1px solid rgba(var(--theme-color2-rgb), .16);
+}
+.loan-details-table th,
+.loan-details-table td {
+  padding: 13px 16px;
+  border-color: rgba(var(--theme-color2-rgb), .16);
+  vertical-align: middle;
+}
+.loan-details-table thead th,
+.loan-details-table tbody th {
+  color: var(--theme-color2);
+  font-family: var(--title-font);
+  font-weight: 700;
+}
+.loan-details-table thead th {
+  background: var(--theme-color-light-green);
+}
+
+.srv-collapse-box ul li:last-of-type{margin-bottom: 0;}
+.benefit-list strong{font-weight: 600;}
+.benefit-list .text{font-size: 15px;line-height: 1.6;}
 .service-details-help {
   position: relative;
   display: block;
