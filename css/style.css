@@ -12639,7 +12639,7 @@ CONTACT Details
   border-bottom: 1px solid rgba(2, 6, 38, 0.102);
 }
 .objective-section .content-column .inner-column .nav.nav-tabs .nav-item .nav-link {
-  padding: 8px 50px;
+  padding: 8px 30px;
   font-weight: 700;
   font-family: var(--title-font);
   text-transform: capitalize;
@@ -12655,13 +12655,6 @@ CONTACT Details
 @media (max-width: 575.98px) {
   .objective-section .content-column .inner-column .nav.nav-tabs .nav-item .nav-link {
     padding: 6px 20px;
-  }
-}
-@media (max-width: 575.98px) {
-  .objective-section .content-column .inner-column .nav.nav-tabs {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 @media (max-width: 767.98px) {
@@ -23318,6 +23311,10 @@ $grid-breakpoints: (
   .small-title{
     text-align:center;
   }
+
+  .objective-section .sec-title .flex-content{
+    flex-direction:column;
+  }
 }
 
 @media(max-width: 767px){
@@ -23326,7 +23323,7 @@ $grid-breakpoints: (
     line-height: 38px !important;
   }
 
-    .sec-title .text, .testimonial-block-two .text {
+    .sec-title .text, .testimonial-block-two .text, .objective-section .content-column .inner-column .text, .cont p {
       font-size: 16px;
       line-height: 32px;
     }
@@ -23519,11 +23516,6 @@ $grid-breakpoints: (
     line-height: 27px !important;
   }
 
-  .sec-title .text {
-    font-size: 15px !important;
-    line-height: 29px !important;
-  }
-
   .about-block-two .item .con {
     font-size: 15px;
     line-height: 24px;
@@ -23679,7 +23671,7 @@ $grid-breakpoints: (
     margin-bottom: 30px !important;
   }
   
-  .sec-title .text{
+  .sec-title .text, .objective-section .content-column .inner-column .text, .cont p{
     font-size: 13px !important;
     line-height: 25px !important;
     margin-top: 8px;
@@ -23754,6 +23746,47 @@ $grid-breakpoints: (
     font-size: 20px;
     line-height: 26px;
   }
+
+  .objective-block .title{
+    font-size: 18px;
+  }
+
+  .cont h5{
+    font-size:16px;
+    margin-bottom: 0;
+  }
+
+  .cont p{
+    margin-top:0;
+  }
+
+  .objective-block .outer-box .item{
+    gap:10px;
+  }
+
+  .objective-block .outer-box .item .icon{
+    width:52px;
+  }
+
+  .mb-40 {
+    margin-bottom: 20px !important;
+  }
+
+  .objective-section .content-column .inner-column .nav.nav-tabs .nav-item .nav-link{
+    padding: 0px 15px;
+    font-size:14px;
+  }
+
+  .objective-section  .tab-content.mt-30{
+    margin-top:15px !important;
+  }
+
+  .btn-one-rounded {
+    min-width: 150px;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
 }
 @media (max-width: 420px) {
   .ckt-block-two{
