@@ -18,10 +18,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.js"></script>
+    <style>
+        @media (max-width:480px) {
+            body {
+                height: calc(100dvh - 50px);
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="page-wrapper">
+
+        <div class="mobile-apply-bar">
+            <button class="btn-two mobile-apply-btn" href="">For an Inquiry</button>
+        </div>
 
         <!-- Preloader -->
         <div class="preloader"></div>
@@ -198,7 +209,8 @@
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="page-services.html?do=getServiceData&amp;productId=1">Home Loan</a></li>
-                        <li><a href="service-category.html?productId=1&amp;productCategoryId=1">Home Loan for Salaried</a></li>
+                        <li><a href="service-category.html?productId=1&amp;productCategoryId=1">Home Loan for
+                                Salaried</a></li>
                         <li><span id="subcategoryBreadcrumb">Home Loan for Salaried</span></li>
                     </ul>
                 </div>
@@ -219,8 +231,10 @@
                     <div class="col-lg-6">
                         <div class="project-details__top">
                             <div class="text" id="serviceDescription">
-                                <h2 class="title mb-30" id="subcategoryHeading">Home Loan for Salaried</h2>
-                                <p class="text">Indusind Bank offers various home loan products tailored to meet different needs, such as purchasing a new home, constructing a home, or transferring an existing home loan.</p>
+                                <h2 class="title mt-3 mt-lg-0 mb-30" id="subcategoryHeading">Home Loan for Salaried</h2>
+                                <p class="text">Indusind Bank offers various home loan products tailored to meet
+                                    different needs, such as purchasing a new home, constructing a home, or transferring
+                                    an existing home loan.</p>
                                 <p class="text"><strong>Following are the Indusind Bank Home Loan products:</strong></p>
                                 <ul class="mb-4">
                                     <li class="text">Balance Transfer</li>
@@ -244,50 +258,80 @@
                                 <div class="col-lg-6">
                                     <img src="https://finance.livanity.com/storagebox/leadcrm/productsubcategorydata/14/prdDiv2Img1.jpg"
                                         alt="Indusind Bank Home Loan" class="rounded-4 mb-4" />
-                                    <p class="text"><strong>Here are some key aspects of Indusind Bank Home Loan:</strong></p>
-                                    <p class="text"><strong>1. Loan Amount:</strong> The bank offers home loans ranging from small amounts to substantial sums, depending on the borrower's eligibility and the value of the property.</p>
-                                    <p class="text"><strong>2. Interest Rates:</strong> Competitive interest rates are available on fixed or floating terms. The specific rate may vary based on the loan amount, tenure and the applicant's credit profile.</p>
-                                    <p class="text"><strong>3. Loan Tenure:</strong> Flexible tenure options are available, typically up to 30 years, allowing for manageable EMIs.</p>
-                                    <p class="text"><strong>4. Processing Fee:</strong> A processing fee may apply, often as a percentage of the loan amount or as a fixed fee.</p>
-                                    <p class="text"><strong>5. Prepayment and Foreclosure:</strong> Prepayment and foreclosure options are generally available, sometimes with minimal or no extra charges.</p>
+                                    <p class="text"><strong>Here are some key aspects of Indusind Bank Home
+                                            Loan:</strong></p>
+                                    <p class="text"><strong>1. Loan Amount:</strong> The bank offers home loans ranging
+                                        from small amounts to substantial sums, depending on the borrower's eligibility
+                                        and the value of the property.</p>
+                                    <p class="text"><strong>2. Interest Rates:</strong> Competitive interest rates are
+                                        available on fixed or floating terms. The specific rate may vary based on the
+                                        loan amount, tenure and the applicant's credit profile.</p>
+                                    <p class="text"><strong>3. Loan Tenure:</strong> Flexible tenure options are
+                                        available, typically up to 30 years, allowing for manageable EMIs.</p>
+                                    <p class="text"><strong>4. Processing Fee:</strong> A processing fee may apply,
+                                        often as a percentage of the loan amount or as a fixed fee.</p>
+                                    <p class="text"><strong>5. Prepayment and Foreclosure:</strong> Prepayment and
+                                        foreclosure options are generally available, sometimes with minimal or no extra
+                                        charges.</p>
                                 </div>
                                 <div class="col-lg-6">
-                                    <p class="text"><strong>6. Top-Up Loan:</strong> Existing home loan customers may have the option to avail a top-up loan for additional financial needs.</p>
+                                    <p class="text"><strong>6. Top-Up Loan:</strong> Existing home loan customers may
+                                        have the option to avail a top-up loan for additional financial needs.</p>
 
                                     <h3 class="mt-4">Eligibility Criteria for Loan</h3>
-                                    <p class="text"><strong>1. Age:</strong> Usually, applicants should be between 21 and 65 years.</p>
-                                    <p class="text"><strong>2. Income:</strong> A stable income source, either from employment or business, is required.</p>
-                                    <p class="text"><strong>3. Credit Score:</strong> A good credit score, typically 750 and above, is preferred.</p>
-                                    <p class="text"><strong>4. Employment:</strong> Salaried employees, self-employed professionals and business owners can apply.</p>
+                                    <p class="text"><strong>1. Age:</strong> Usually, applicants should be between 21
+                                        and 65 years.</p>
+                                    <p class="text"><strong>2. Income:</strong> A stable income source, either from
+                                        employment or business, is required.</p>
+                                    <p class="text"><strong>3. Credit Score:</strong> A good credit score, typically 750
+                                        and above, is preferred.</p>
+                                    <p class="text"><strong>4. Employment:</strong> Salaried employees, self-employed
+                                        professionals and business owners can apply.</p>
 
                                     <h3 class="mt-4">Documentation Required for Loan</h3>
-                                    <p class="text"><strong>1. Identity Proof:</strong> Aadhaar card, PAN card, passport, voter ID, etc.</p>
-                                    <p class="text"><strong>2. Address Proof:</strong> Utility bills, rent agreement, passport, etc.</p>
-                                    <p class="text"><strong>3. Income Proof:</strong> For salaried applicants: salary slips, Form 16 and bank statements. For self-employed applicants: financial statements, ITRs and bank statements.</p>
-                                    <p class="text"><strong>4. Property Documents:</strong> Agreement to sale, title deed, approved building plan, etc.</p>
-                                    <p class="text"><strong>5. Other Documents:</strong> Passport-sized photographs, application form and any other documents requested by the bank.</p>
+                                    <p class="text"><strong>1. Identity Proof:</strong> Aadhaar card, PAN card,
+                                        passport, voter ID, etc.</p>
+                                    <p class="text"><strong>2. Address Proof:</strong> Utility bills, rent agreement,
+                                        passport, etc.</p>
+                                    <p class="text"><strong>3. Income Proof:</strong> For salaried applicants: salary
+                                        slips, Form 16 and bank statements. For self-employed applicants: financial
+                                        statements, ITRs and bank statements.</p>
+                                    <p class="text"><strong>4. Property Documents:</strong> Agreement to sale, title
+                                        deed, approved building plan, etc.</p>
+                                    <p class="text"><strong>5. Other Documents:</strong> Passport-sized photographs,
+                                        application form and any other documents requested by the bank.</p>
                                 </div>
                             </div>
                             <section class="mt-5 pt-5 border-top">
                                 <h3 class="mb-4">Interest Rates</h3>
-                                <p class="text">Interest rates vary based on the loan amount, tenure and the applicant's credit profile. Indusind Bank Home Loan provides competitive rates in line with market standards.</p>
-                                <p class="text">For details on the latest interest rates, offers and personalised loan terms, please contact Livanity Financial Services or our customer support team.</p>
+                                <p class="text">Interest rates vary based on the loan amount, tenure and the applicant's
+                                    credit profile. Indusind Bank Home Loan provides competitive rates in line with
+                                    market standards.</p>
+                                <p class="text">For details on the latest interest rates, offers and personalised loan
+                                    terms, please contact Livanity Financial Services or our customer support team.</p>
                             </section>
                             <section class="mt-5 pt-5 border-top">
                                 <h3 class="mb-4">Why choose Livanity for Indusind Bank Home Loan?</h3>
-                                <p class="text">Here are a few reasons to apply for an Indusind Bank Home Loan at Livanity:</p>
+                                <p class="text">Here are a few reasons to apply for an Indusind Bank Home Loan at
+                                    Livanity:</p>
 
                                 <p class="text mt-4"><strong>Fast assistance</strong></p>
                                 <p class="text">At Livanity, you can contact us during official working hours.</p>
 
                                 <p class="text mt-4"><strong>Customer needs in forefront</strong></p>
-                                <p class="text">Your needs are our priority. We aim to deliver the best service possible and handpick home loan offers based on your profile for a more personalised experience.</p>
+                                <p class="text">Your needs are our priority. We aim to deliver the best service possible
+                                    and handpick home loan offers based on your profile for a more personalised
+                                    experience.</p>
 
                                 <p class="text mt-4"><strong>Compare Offers Online</strong></p>
-                                <p class="text">With more than 100 lender partners, you can compare offers from financial institutions and select the lender that best fits your eligibility. A dedicated relationship lender helps every customer choose their preferred bank.</p>
+                                <p class="text">With more than 100 lender partners, you can compare offers from
+                                    financial institutions and select the lender that best fits your eligibility. A
+                                    dedicated relationship lender helps every customer choose their preferred bank.</p>
 
                                 <p class="text mt-4"><strong>Real-time customer support</strong></p>
-                                <p class="text">Our customer support team can help with loan eligibility, procedures, offers, documentation and repayment options, and can coordinate with the respective lender on your behalf.</p>
+                                <p class="text">Our customer support team can help with loan eligibility, procedures,
+                                    offers, documentation and repayment options, and can coordinate with the respective
+                                    lender on your behalf.</p>
                             </section>
                         </div>
                     </div>
@@ -336,7 +380,7 @@
                                 </div>
                                 <div class="sidebar-service-list inquiry-form">
                                     <h4 class="title">For an Inquiry</h4>
-                                    <form action="#0" class="srv-collapse-box loan-inquiry-form">
+                                    <form action="#0" class="srv-collapse-box loan-inquiry-form" id="inquiryForm">
                                         <fieldset class="loan-choice-group">
                                             <legend>Occupation</legend>
                                             <label class="custom-radio">
@@ -418,69 +462,76 @@
             </div>
         </section>
         <!--End Services Details-->
+        <a class="mobile-inquiry-trigger" href="#inquiryForm">For an Inquiry</a>
 
         <!-- Footer area start here -->
         <footer class="main-footer footer-style-three pt-100">
             <div class="container">
-            <div class="widgets-section">
-                <div class="row ">
-                <div class="col-lg-5 footer-column footer-para">
-                    <div class="footer-widget about-widget">
-                    <div class="logo">
-                        <a href="index.html"><img src="images/logo-light.png" alt="Logo"></a>
-                    </div>
-                    <div class="widget-content">
-                        <p class="text">Creditkart Financial Services helps customers find suitable loan solutions with transparent guidance, quick support, and a customer-first process.</p>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
+                <div class="widgets-section">
                     <div class="row ">
-                    <div class="col-md-6 footer-column footer-link">
-                        <div class="footer-widget links-widget">
-                        <h4 class="widget-title">Quick Link</h4>
-                        <div class="widget-content">
-                            <ul class="user-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="page-about.html">About Us</a></li>
-                            <li><a href="page-services.html">Services</a></li>
-                            <li><a href="page-contact.html">Contact</a></li>
-                            </ul>
+                        <div class="col-lg-5 footer-column footer-para">
+                            <div class="footer-widget about-widget">
+                                <div class="logo">
+                                    <a href="index.html"><img src="images/logo-light.png" alt="Logo"></a>
+                                </div>
+                                <div class="widget-content">
+                                    <p class="text">Creditkart Financial Services helps customers find suitable loan
+                                        solutions with transparent guidance, quick support, and a customer-first
+                                        process.</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-lg-7">
+                            <div class="row ">
+                                <div class="col-md-6 footer-column footer-link">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">Quick Link</h4>
+                                        <div class="widget-content">
+                                            <ul class="user-links">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="page-about.html">About Us</a></li>
+                                                <li><a href="page-services.html">Services</a></li>
+                                                <li><a href="page-contact.html">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 footer-column footer-link">
+                                    <div class="footer-widget links-widget contact-widget">
+                                        <h4 class="widget-title">Contact</h4>
+                                        <div class="widget-content">
+                                            <ul class="user-links">
+                                                <li>
+                                                    <i class="fa-light fa-location-dot"></i>
+                                                    <a href="#0">55 Main Street, 2nd block Melbourne, Australia</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa-light fa-phone-flip"></i>
+                                                    <a href="tel:+9537124124">+91 9537 124 124</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 footer-column footer-link">
-                        <div class="footer-widget links-widget contact-widget">
-                        <h4 class="widget-title">Contact</h4>
-                        <div class="widget-content">
-                            <ul class="user-links">
-                            <li>
-                                <i class="fa-light fa-location-dot"></i>
-                                <a href="#0">55 Main Street, 2nd block Melbourne, Australia</a>
-                            </li>
-                            <li>
-                                <i class="fa-light fa-phone-flip"></i>
-                                <a href="tel:+9537124124">+91 9537 124 124</a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
+                <div class="footer-bottom">
+                    <p class="copyright-text">Copyright ©
+                        <script>document.write(new Date().getFullYear())</script> <a href="#0">Design</a> All Rights
+                        Reserved
+                    </p>
+                    <button class="goTop-btn"><i class="fa-solid fa-angles-up"></i> <i
+                            class="fa-solid fa-angles-up"></i></button>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright-text">Copyright ©<script>document.write(new Date().getFullYear())</script>  <a href="#0">Design</a> All Rights Reserved</p>
-                <button class="goTop-btn"><i class="fa-solid fa-angles-up"></i> <i class="fa-solid fa-angles-up"></i></button>
-            </div>
             </div>
             <div class="sec-shape">
-            <img class="animation__rotateY" src="images/shape/dual-circle420.png" alt="Image">
+                <img class="animation__rotateY" src="images/shape/dual-circle420.png" alt="Image">
             </div>
             <div class="box-shape">
-            <div class="box1 wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
-            <div class="box2 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
+                <div class="box1 wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
+                <div class="box2 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
             </div>
         </footer>
         <!-- Footer area end here -->
@@ -512,32 +563,55 @@
     <script src="js/vanilla-tilt.js"></script>
     <script src="js/splitting.js"></script>
     <script src="js/splitType.js"></script>
-  <script src="js/script-gsap.js"></script>
-  <script src="js/script.js"></script>
-  <script>
-    (function () {
-      var subcategories = {
-        14: "Indusind Bank Home Loan",
-        22: "Shriram Housing Finance Home Loan",
-        10: "ICICI Home Loan",
-        6: "Bank of Baroda Home Loan",
-        23: "Sundaram Home Loan",
-        2488: "testing22222000",
-        25: "Ujjivan Small Finance Home Loan",
-        12: "IDFC First Home Loan",
-        3: "Axis Bank Home Loan"
-      };
-      var subcategoryId = new URLSearchParams(window.location.search).get("productSubCatId");
-      var subcategoryName = subcategories[subcategoryId];
+    <script src="js/script-gsap.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+            (function () {
+                var subcategories = {
+                    14: "Indusind Bank Home Loan",
+                    22: "Shriram Housing Finance Home Loan",
+                    10: "ICICI Home Loan",
+                    6: "Bank of Baroda Home Loan",
+                    23: "Sundaram Home Loan",
+                    2488: "testing22222000",
+                    25: "Ujjivan Small Finance Home Loan",
+                    12: "IDFC First Home Loan",
+                    3: "Axis Bank Home Loan"
+                };
+                var subcategoryId = new URLSearchParams(window.location.search).get("productSubCatId");
+                var subcategoryName = subcategories[subcategoryId];
 
-      if (!subcategoryName) return;
+                if (!subcategoryName) return;
 
-      document.title = "Creditkart | " + subcategoryName;
-      document.getElementById("subcategoryPageTitle").textContent = subcategoryName;
-      document.getElementById("subcategoryBreadcrumb").textContent = subcategoryName;
-      document.getElementById("subcategoryHeading").textContent = subcategoryName;
-    })();
-  </script>
+                document.title = "Creditkart | " + subcategoryName;
+                document.getElementById("subcategoryPageTitle").textContent = subcategoryName;
+                document.getElementById("subcategoryBreadcrumb").textContent = subcategoryName;
+                document.getElementById("subcategoryHeading").textContent = subcategoryName;
+
+                var applyBtn = document.querySelector('.mobile-apply-btn');
+                var inquiryForm = document.getElementById('inquiryForm');
+
+                if (applyBtn && inquiryForm) {
+                    applyBtn.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        inquiryForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    });
+                }
+            })();
+    </script>
+
+    <script>
+        (function () {
+            var button = document.querySelector('.mobile-apply-btn');
+            var inquiryForm = document.getElementById('inquiryForm');
+            if (!button || !inquiryForm) return;
+
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                inquiryForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        })();
+    </script>
 
 </body>
 

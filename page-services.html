@@ -18,10 +18,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.js"></script>
+
+  <style>
+    @media (max-width:480px) {
+      body {
+        height: calc(100dvh - 50px);
+      }
+    }
+  </style>
+
 </head>
 
 <body>
   <div class="page-wrapper">
+
+    <div class="mobile-apply-bar">
+      <button class="btn-two mobile-apply-btn" href="">For an Inquiry</button>
+    </div>
 
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -184,7 +197,7 @@
 
     <!-- Start main-content -->
     <section class="page-title" style="background-image: url(images/background/page-title-bg.jpg);">
-      <div class="auto-container">
+      <div class="container">
         <div class="title-outer">
           <h1 class="title" id="pageTitle">Service Details</h1>
           <ul class="page-breadcrumb">
@@ -254,23 +267,42 @@
               <section class="loan-content-section">
                 <h3>Home Loan Interest Rates</h3>
                 <p>Home loan interest rates start from 8.15% p.a. The rate offered depends on the loan type, tenure,
-                  financial profile and credit history. A stronger credit profile can help you qualify for a lower rate.</p>
-                  <div class="table-rounded">
-                    <div class="table-responsive">
-                      <table class="table loan-details-table">
-                        <thead><tr><th>Rate type</th><th>Banks</th><th>NBFCs</th><th>Private lenders</th></tr></thead>
-                        <tbody><tr><th>ROI (monthly reducing)</th><td>8.15%–23.0%</td><td>10.99%–36.0%</td><td>10.65%–16.0%</td></tr></tbody>
-                      </table>
-                    </div>
+                  financial profile and credit history. A stronger credit profile can help you qualify for a lower rate.
+                </p>
+                <div class="table-rounded">
+                  <div class="table-responsive">
+                    <table class="table loan-details-table">
+                      <thead>
+                        <tr>
+                          <th>Rate type</th>
+                          <th>Banks</th>
+                          <th>NBFCs</th>
+                          <th>Private lenders</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>ROI (monthly reducing)</th>
+                          <td>8.15%–23.0%</td>
+                          <td>10.99%–36.0%</td>
+                          <td>10.65%–16.0%</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                </div>
               </section>
 
               <section class="loan-content-section">
                 <h3>How to apply for a Home Loan @Livanity:</h3>
                 <p class="text"><strong>1. Fill the Application form:</strong></p>
-                <p class="text">The customer needs to fill in the Loan Application form which includes details such as Full Name (As per PAN Card), Email Address, Current residential address, employment details, current company name, monthly in-hand salary, mobile Number, age, income, employment stability, and credit score ensure that you meet their requirements.</p>
+                <p class="text">The customer needs to fill in the Loan Application form which includes details such as
+                  Full Name (As per PAN Card), Email Address, Current residential address, employment details, current
+                  company name, monthly in-hand salary, mobile Number, age, income, employment stability, and credit
+                  score ensure that you meet their requirements.</p>
                 <p class="text"><strong>2. Documentation:</strong></p>
-                <p class="text">Once you fill the loan application form, you will have to attach the following documents for verification:</p>
+                <p class="text">Once you fill the loan application form, you will have to attach the following documents
+                  for verification:</p>
                 <ul>
                   <li class="text">Identity proof - PAN card/ Aadhar Card / Voter ID/ Driving license</li>
                   <li class="text">Address of proof - can be a copy of any utility bill</li>
@@ -280,10 +312,16 @@
                   <li class="text">Form 16</li>
                 </ul>
                 <p class="text"><strong>3. Processing and Verification:</strong></p>
-                <p class="text">After submission of the application form along with the required documents, the bank starts processing the Home Loan application. The bank will verify all the documents provided by you. A bank representative may even visit your workplace or home or both for the same.</p>
-                <p class="text">The bank conducts an extensive enquiry into your credit score to check your creditworthiness as a borrower. If all your documents are in order and you have a satisfactory credit score and report, the bank will proceed with your loan application.</p>
+                <p class="text">After submission of the application form along with the required documents, the bank
+                  starts processing the Home Loan application. The bank will verify all the documents provided by you. A
+                  bank representative may even visit your workplace or home or both for the same.</p>
+                <p class="text">The bank conducts an extensive enquiry into your credit score to check your
+                  creditworthiness as a borrower. If all your documents are in order and you have a satisfactory credit
+                  score and report, the bank will proceed with your loan application.</p>
                 <p class="text"><strong>4. Sanction Letter:</strong></p>
-                <p class="text">On successful approval of your loan application, the bank will send a sanction letter to the borrower. This letter acts as proof that the bank has approved your loan. All essential details about the loan transaction are enclosed in this letter, such as:</p>
+                <p class="text">On successful approval of your loan application, the bank will send a sanction letter to
+                  the borrower. This letter acts as proof that the bank has approved your loan. All essential details
+                  about the loan transaction are enclosed in this letter, such as:</p>
                 <ul>
                   <li class="text">The loan amount you are eligible for</li>
                   <li class="text">The interest rate offered</li>
@@ -292,32 +330,66 @@
                   <li class="text">Terms and conditions of repayment</li>
                 </ul>
                 <p class="text"><strong>5. Secure Payment Fee:</strong></p>
-                <p class="text">On signing the sanction letter, the client will have to pay a one-time secure payment fee which may be payable upfront either before or after the loan sanction.</p>
+                <p class="text">On signing the sanction letter, the client will have to pay a one-time secure payment
+                  fee which may be payable upfront either before or after the loan sanction.</p>
                 <p class="text"><strong>6. Legal and Technical Check:</strong></p>
-                <p class="text">Before the loan is disbursed, the bank will conduct legal and technical checks. The bank representatives will verify the property for which the loan is applied and check the ownership rights of the property.</p>
-                <p class="text">During the technical check, the bank representatives will evaluate the actual value of the property. The status of the property - under construction or resale - will also be taken into consideration.</p>
-                <p class="text">In case of an under construction property, they will check the construction stage and quality of the work. Whereas, if the property is a resale one, the bank will check the age and maintenance of the property.</p>
-                <p class="text">In case of resale, the bank may also check if the property has already been mortgaged before or not.</p>
+                <p class="text">Before the loan is disbursed, the bank will conduct legal and technical checks. The bank
+                  representatives will verify the property for which the loan is applied and check the ownership rights
+                  of the property.</p>
+                <p class="text">During the technical check, the bank representatives will evaluate the actual value of
+                  the property. The status of the property - under construction or resale - will also be taken into
+                  consideration.</p>
+                <p class="text">In case of an under construction property, they will check the construction stage and
+                  quality of the work. Whereas, if the property is a resale one, the bank will check the age and
+                  maintenance of the property.</p>
+                <p class="text">In case of resale, the bank may also check if the property has already been mortgaged
+                  before or not.</p>
                 <p class="text"><strong>7. Loan Disbursal:</strong></p>
-                <p class="text">Once the legal and technical checks are completed and the bank is satisfied with the checks conducted, the loan application will be approved and the client will receive a final agreement letter.</p>
-                <p class="text">Prior to disbursal of loan, the borrower will receive a welcome kit with detailed housing loan EMI schedule.</p>
-                <p class="text">If the borrower wants to switch the lender, there is an option for the Home Loan Transfer procedure.</p>
-                <p class="text">It is important that you check whether you meet the required Home Loan eligibility criteria before applying for the loan. You can seek professional guidance here to make a more informed decision and Livanity Financial Services will help you to make your decision much easier.</p>
+                <p class="text">Once the legal and technical checks are completed and the bank is satisfied with the
+                  checks conducted, the loan application will be approved and the client will receive a final agreement
+                  letter.</p>
+                <p class="text">Prior to disbursal of loan, the borrower will receive a welcome kit with detailed
+                  housing loan EMI schedule.</p>
+                <p class="text">If the borrower wants to switch the lender, there is an option for the Home Loan
+                  Transfer procedure.</p>
+                <p class="text">It is important that you check whether you meet the required Home Loan eligibility
+                  criteria before applying for the loan. You can seek professional guidance here to make a more informed
+                  decision and Livanity Financial Services will help you to make your decision much easier.</p>
               </section>
 
               <section class="loan-content-section">
                 <h3>Home Loan Eligibility</h3>
-                <p>Eligibility differs by lender, but the following are common requirements for salaried and self-employed applicants.</p>
+                <p>Eligibility differs by lender, but the following are common requirements for salaried and
+                  self-employed applicants.</p>
                 <div class="table-rounded">
                   <div class="table-responsive">
                     <table class="table loan-details-table">
                       <tbody>
-                        <tr><th>Age</th><td>23 to 65 years</td></tr>
-                        <tr><th>Employment</th><td>Salaried or self-employed professional</td></tr>
-                        <tr><th>Credit score</th><td>725 or above with a positive credit history</td></tr>
-                        <tr><th>Minimum income</th><td>₹25,000 monthly salary or ₹2 lakh annual business income</td></tr>
-                        <tr><th>Loan amount</th><td>₹5 lakh onwards, subject to income and property value</td></tr>
-                        <tr><th>Experience</th><td>3 years for salaried applicants; 5 years of continuous business history for self-employed applicants</td></tr>
+                        <tr>
+                          <th>Age</th>
+                          <td>23 to 65 years</td>
+                        </tr>
+                        <tr>
+                          <th>Employment</th>
+                          <td>Salaried or self-employed professional</td>
+                        </tr>
+                        <tr>
+                          <th>Credit score</th>
+                          <td>725 or above with a positive credit history</td>
+                        </tr>
+                        <tr>
+                          <th>Minimum income</th>
+                          <td>₹25,000 monthly salary or ₹2 lakh annual business income</td>
+                        </tr>
+                        <tr>
+                          <th>Loan amount</th>
+                          <td>₹5 lakh onwards, subject to income and property value</td>
+                        </tr>
+                        <tr>
+                          <th>Experience</th>
+                          <td>3 years for salaried applicants; 5 years of continuous business history for self-employed
+                            applicants</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -332,12 +404,14 @@
                   <li class="text">20-year tenure is Rs 23,385,</li>
                   <li class="text">30-year tenure is Rs 21,113.</li>
                 </ul>
-                <p class="text"><em>*Disclaimer: These are approximate EMI calculations; actual numbers may vary.</em></p>
+                <p class="text"><em>*Disclaimer: These are approximate EMI calculations; actual numbers may vary.</em>
+                </p>
               </section>
 
               <section class="loan-content-section">
                 <h3>Home Loan EMI Calculator</h3>
-                <p class="text">Calculate an EMI and check whether it fits in your monthly budget or not. A loan calculator helps you get the following results:</p>
+                <p class="text">Calculate an EMI and check whether it fits in your monthly budget or not. A loan
+                  calculator helps you get the following results:</p>
                 <ul>
                   <li class="text">Monthly Repayments - EMI you will be paying every month</li>
                   <li class="text">Total interest payable - Total interest on your loan</li>
@@ -351,13 +425,34 @@
                   <div class="table-responsive">
                     <table class="table loan-details-table">
                       <tbody>
-                        <tr><th>Interest Rates</th><td>8.15% - 36%</td></tr>
-                        <tr><th>Processing Fee</th><td>Differs from bank to bank; generally ranges between 1-5% of the loan amount</td></tr>
-                        <tr><th>Loan Tenure</th><td>10 to 30 years</td></tr>
-                        <tr><th>Loan Amount</th><td>more than 5 lakhs</td></tr>
-                        <tr><th>Lock-in period</th><td>Varies from lender to lender</td></tr>
-                        <tr><th>Pre-closure Charges</th><td>Differs; Nill for floating rate loans</td></tr>
-                        <tr><th>Guarantor Required</th><td>Varies on different conditions</td></tr>
+                        <tr>
+                          <th>Interest Rates</th>
+                          <td>8.15% - 36%</td>
+                        </tr>
+                        <tr>
+                          <th>Processing Fee</th>
+                          <td>Differs from bank to bank; generally ranges between 1-5% of the loan amount</td>
+                        </tr>
+                        <tr>
+                          <th>Loan Tenure</th>
+                          <td>10 to 30 years</td>
+                        </tr>
+                        <tr>
+                          <th>Loan Amount</th>
+                          <td>more than 5 lakhs</td>
+                        </tr>
+                        <tr>
+                          <th>Lock-in period</th>
+                          <td>Varies from lender to lender</td>
+                        </tr>
+                        <tr>
+                          <th>Pre-closure Charges</th>
+                          <td>Differs; Nill for floating rate loans</td>
+                        </tr>
+                        <tr>
+                          <th>Guarantor Required</th>
+                          <td>Varies on different conditions</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -366,15 +461,25 @@
 
               <section class="loan-content-section mb-0">
                 <h3>Why Choose Livanity for Your Home Loan?</h3>
-                <p class="text">Livanity is a one-stop solution for all your financial needs. Here, we try to provide you best services that are hassle-free and quick in nature. For home loans, we provide you a comparative analysis of what different banks are offering. We also assist you in your final decision.</p>
+                <p class="text">Livanity is a one-stop solution for all your financial needs. Here, we try to provide
+                  you best services that are hassle-free and quick in nature. For home loans, we provide you a
+                  comparative analysis of what different banks are offering. We also assist you in your final decision.
+                </p>
                 <p class="text">Here are a few reasons for you to apply for a home loan at Livanity:</p>
-                <p class="text"><strong>Fast assistance:</strong> At Livanity, you can contact us at any official working hours of the day.</p>
-                <p class="text"><strong>Customer needs in forefront:</strong> Your needs are our priority. We promise to deliver you with services that are best on our capabilities.</p>
-                <p class="text"><strong>Compare offers online:</strong> With more than 100 lenders as partners, you can compare the different offers of financial institutions to make the right decision. We help you find the best lender as per your eligibility requirements. There is a personalized relationship lender for every customer who helps him/her select the bank of his/her choice.</p>
-                <p class="text"><strong>Real-time customer support:</strong> Our customer support team is fast and efficient to clear all your doubts regarding home loan eligibility, procedures, offers, documentation and repayment options. We even contact the respective lender on your behalf.</p>
+                <p class="text"><strong>Fast assistance:</strong> At Livanity, you can contact us at any official
+                  working hours of the day.</p>
+                <p class="text"><strong>Customer needs in forefront:</strong> Your needs are our priority. We promise to
+                  deliver you with services that are best on our capabilities.</p>
+                <p class="text"><strong>Compare offers online:</strong> With more than 100 lenders as partners, you can
+                  compare the different offers of financial institutions to make the right decision. We help you find
+                  the best lender as per your eligibility requirements. There is a personalized relationship lender for
+                  every customer who helps him/her select the bank of his/her choice.</p>
+                <p class="text"><strong>Real-time customer support:</strong> Our customer support team is fast and
+                  efficient to clear all your doubts regarding home loan eligibility, procedures, offers, documentation
+                  and repayment options. We even contact the respective lender on your behalf.</p>
               </section>
-              </div>
             </div>
+          </div>
           <!--End Services Details Content-->
 
           <!--Start Services Details Sidebar-->
@@ -404,7 +509,7 @@
                 </div>
                 <div class="sidebar-service-list inquiry-form">
                   <h4 class="title">For an Inquiry</h4>
-                  <form action="#0" class="srv-collapse-box loan-inquiry-form">
+                  <form action="#0" class="srv-collapse-box loan-inquiry-form" id="inquiryForm">
                     <fieldset class="loan-choice-group">
                       <legend>Occupation</legend>
                       <label class="custom-radio">
@@ -484,6 +589,7 @@
       </div>
     </section>
     <!--End Services Details-->
+    <a class="mobile-inquiry-trigger" href="#inquiryForm">For an Inquiry</a>
 
     <!-- Footer area start here -->
     <footer class="main-footer footer-style-three pt-100">
@@ -496,7 +602,8 @@
                   <a href="index.html"><img src="images/logo-light.png" alt="Logo"></a>
                 </div>
                 <div class="widget-content">
-                  <p class="text">Creditkart Financial Services helps customers find suitable loan solutions with transparent guidance, quick support, and a customer-first process.</p>
+                  <p class="text">Creditkart Financial Services helps customers find suitable loan solutions with
+                    transparent guidance, quick support, and a customer-first process.</p>
                 </div>
               </div>
             </div>
@@ -537,7 +644,9 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p class="copyright-text">Copyright ©<script>document.write(new Date().getFullYear())</script>  <a href="#0">Design</a> All Rights Reserved</p>
+          <p class="copyright-text">Copyright ©
+            <script>document.write(new Date().getFullYear())</script> <a href="#0">Design</a> All Rights Reserved
+          </p>
           <button class="goTop-btn"><i class="fa-solid fa-angles-up"></i> <i class="fa-solid fa-angles-up"></i></button>
         </div>
       </div>
@@ -580,6 +689,19 @@
   <script src="js/splitType.js"></script>
   <script src="js/script-gsap.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+      (function () {
+        var button = document.querySelector('.mobile-apply-btn');
+        var inquiryForm = document.getElementById('inquiryForm');
+        if (!button || !inquiryForm) return;
+
+        button.addEventListener('click', function (event) {
+          event.preventDefault();
+          inquiryForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      })();
+  </script>
 
   <script src="js/services-data.js"></script>
   <script>
